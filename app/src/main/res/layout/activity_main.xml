@@ -7,73 +7,50 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-
-    <LinearLayout
+    <TextView
+        android:id="@+id/resultView"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:orientation="vertical"
-        android:layout_gravity="bottom"
-        android:weightSum="100">
-        <EditText
-            android:layout_width="fill_parent"
-            android:layout_height="0dp"
-            android:layout_weight="15" />
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="0dp"
-            android:layout_weight="85"
-            android:background="@color/colorBackground"
-            android:orientation="horizontal"
-            android:tileMode="repeat" >
+        android:layout_height="100dp"
+        android:layout_weight="15"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
 
-            <TableRow
-                android:id="@+id/tableRow1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="100" >
+    <Button
+        android:id="@+id/buttonReset"
+        android:layout_width="78dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="10pt"
+        android:background="@android:color/transparent"
+        android:text="@string/buttonReset"
+        android:textColor="@color/colorButtons"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/resultView"
+        tools:layout_editor_absoluteX="0dp" />
 
-                <Button
-                    android:id="@+id/buttonDel"
-                    android:layout_weight="25"
-                    android:text="@string/buttonBackspace"
-                    android:textStyle="bold"
-                    android:background="@android:color/transparent"
-                    android:textColor="@color/colorButtons"
-                    />
+    <Button
+        android:id="@+id/buttonPercantage"
+        android:layout_weight="25"
+        android:text="@string/buttonPercent"
+        android:textStyle="bold"
+        android:background="@android:color/transparent"
+        android:textColor="@color/colorButtons" />
 
-                <Button
-                    android:id="@+id/buttonReset"
-                    android:layout_weight="25"
-                    android:text="@string/buttonReset"
-                    android:textStyle="bold"
-                    android:background="@android:color/transparent"
-                    android:textColor="@color/colorButtons"
-                    />
+    <Button
+        android:id="@+id/buttonDivide"
+        android:layout_weight="25"
+        android:text="@string/buttonDivide"
+        android:textStyle="bold"
+        android:background="@android:color/transparent"
+        android:textColor="@color/colorButtons" />
 
-                <Button
-                    android:id="@+id/buttonPercantage"
-                    android:layout_weight="25"
-                    android:text="@string/buttonPercent"
-                    android:textStyle="bold"
-                    android:background="@android:color/transparent"
-                    android:textColor="@color/colorButtons"
-                    />
-
-                <Button
-                    android:id="@+id/buttonDivide"
-                    android:layout_weight="25"
-                    android:text="@string/buttonDivide"
-                    android:textStyle="bold"
-                    android:background="@android:color/transparent"
-                    android:textColor="@color/colorButtons"
-                    />
-
-
-            </TableRow>
-
-
-
-
-        </LinearLayout>
-    </LinearLayout>
+    <Button
+        android:id="@+id/buttonDel"
+        android:layout_weight="25"
+        android:background="@android:color/transparent"
+        android:text="@string/buttonBackspace"
+        android:textColor="@color/colorButtons"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="477dp" />
 </android.support.constraint.ConstraintLayout>
