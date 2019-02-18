@@ -19,4 +19,5 @@
     <string name="buttonReset">C</string>
     <string name="buttonDot">.</string>
     <string name="buttonBackspace">Del</string>
+    <string name="buttonEquals">=</string>
 </resources>
